@@ -1,0 +1,31 @@
+Transitioning away from Bitbucket Mercurial Repositories
+========================================================
+Shlomi Fish <shlomif@cpan.org>
+:Date: 2019-06-10
+:Revision: $Id$
+
+[id="intro"]
+Introduction
+------------
+
+[id="ScmBackup"]
+ScmBackup:
+----------
+
+ScmBackup: https://scm-backup.org/ - backs up all repos and has "ignoreRepos" blacklist
+so one can resume:
+
+----------
+export BACKUP_PATH="$HOME/Download/bitbucket--scm-backup/bitbucket_shlomif/shlomif"
+
+ls -d "$BACKUP_PATH"\#* | perl -nlE 'say s/.*#//r' | perl -nlE 'say if do { my $d="$ENV{BACKUP_PATH}#$_/repo"; -d "$d/.hg" or -d "$d/branches"}' | perl -lnE 'say " " x 8 . "- " . $_;' | "$EDITOR" -
+----------
+
+* Written in .NET Core and I was able to run the binaries on fedora 31 using the https://fedoraproject.org/wiki/DotNet
+Copr repositories.
+
+[id="coverage"]
+Coverage:
+---------
+
+* FILL IN.
