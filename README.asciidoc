@@ -12,8 +12,8 @@ Introduction
 ScmBackup:
 ----------
 
-ScmBackup: https://scm-backup.org/ - backs up all repos and has an "ignoreRepos" blacklist
-so one can resume stopped operations:
+ScmBackup: https://scm-backup.org/ - backs up all public or private bitbucket repos
+in your account and has an "ignoreRepos" blacklist so one can resume stopped operations:
 
 ----------
 export BACKUP_PATH="$HOME/Download/bitbucket--scm-backup/bitbucket_shlomif/shlomif"
@@ -23,6 +23,14 @@ ls -d "$BACKUP_PATH"\#* | perl -nlE 'say s/.*#//r' | perl -nlE 'say if do { my $
 
 * Written in .NET Core and I was able to run the binaries on fedora 31 using the https://fedoraproject.org/wiki/DotNet
 Copr repositories.
+
+[id="hg2git"]
+Converting Mercurial Repositories to git
+----------------------------------------
+
+* https://hg-git.github.io/[hg-git]
+* https://github.com/frej/fast-export[hg fast-export]
+* https://gitlab.com/esr/reposurgeon[reposurgeon]
 
 [id="coverage"]
 Coverage:
