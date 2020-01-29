@@ -12,8 +12,8 @@ Introduction
 ScmBackup:
 ----------
 
-ScmBackup: https://scm-backup.org/ - backs up all repos and has "ignoreRepos" blacklist
-so one can resume:
+ScmBackup: https://scm-backup.org/ - backs up all repos and has an "ignoreRepos" blacklist
+so one can resume stopped operations:
 
 ----------
 export BACKUP_PATH="$HOME/Download/bitbucket--scm-backup/bitbucket_shlomif/shlomif"
