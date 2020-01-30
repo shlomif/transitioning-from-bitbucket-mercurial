@@ -30,7 +30,7 @@ Converting Mercurial Repositories to git
 
 * https://hg-git.github.io/[hg-git]
 * https://github.com/frej/fast-export[hg fast-export]
-* https://gitlab.com/esr/reposurgeon[reposurgeon]
+* If both fail - try https://gitlab.com/esr/reposurgeon[reposurgeon]
 
 [id="sourcehut"]
 Converting to Sourcehut
