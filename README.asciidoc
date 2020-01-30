@@ -32,6 +32,13 @@ Converting Mercurial Repositories to git
 * https://github.com/frej/fast-export[hg fast-export]
 * https://gitlab.com/esr/reposurgeon[reposurgeon]
 
+[id="sourcehut"]
+Converting to Sourcehut
+-----------------------
+
+* Sourcehut still provides Mercurial hosting.
+* https://hg.sr.ht/~sircmpwn/invertbucket - script to migrate Bitbucket repos there.
+
 [id="coverage"]
 Coverage:
 ---------
